@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ua" id="body">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}" />
+    <meta name="google-site-verification" content="qOe8LsQ__tBrNdC_KfzC0eMlmPy0e01KBgXmQer1jd8" />
+    <title>YOU CAN #тиможеш</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PT5WESYLK8"></script>
+</head>
+
+<body data-rsssl=1>
+
+<header>
+    <div class="upper-header" id="start">
+        <p class="upper-header-text">YOU CAN: НМТести " НМТ/ЗНО-2024"</p>
+        <a class="upper-header-btn" href="https://t.me/+-CqHd9RnwihkNjBi" target="_blank">Отримати</a>
+        </div>
+    <div class="main-header">
+        <img class="logo" src="{% static 'svg/01_You_Can_Logo_Color.svg' %}" alt="">
+
+        <div class="header-nav">
+            <a href="#about-us">Про нас</a>
+            <a href="#courses">Предмети</a>
+            <a href="#prices">Ціни</a>
+            <a href="#consultation">Консультація</a>
+            <a href="#question">Поширенi запитання</a>
+            <a href="#Reviews">Вiдгуки учнiв</a>
+        </div>
+        <div class="header-contacts">
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="hero">
+        <div class="hero-main">
+            <div class="hero-info__left">
+                <h1 class="hero-title">Репетиторський центр «YOU CAN»</h1><p class="hero-meta-description">Підготовка до НМТ та вступу закордон! Заняття з учнями 5-11 класів<br></p>
+                <p class="hero-description">
+                    Ми завжди обираємо комфорт і пропонуємо широкий вибір форматів для навчання: ОНЛАЙН та ОФЛАЙН, ІНДИВІДУАЛЬНО, У ПАРІ, У ГРУПІ - обираєш ти! Графік занять і викладача підбираємо особисто для тебе.
+                </p>
+                <a class="hero-btn" href="#courses">Обрати курс</a>
+            </div>
+            <div class="hero-info__right">
+                <img class="hero-img" src="{% static 'img/header_1.png' %}" alt="">
+            </div>
+        </div>
+
+        <div class="title-stats">
+            <div class="stat-frame" >
+                <span>3</span>
+                <p style="max-width: 134.23px">років роботи Центру «YOU CAN»</p>
+            </div>
+            <div class="stat-frame" >
+                <span>200+</span>
+                <p style="max-width: 159px">учнів підготували до ЗНО та НМТ</p>
+            </div>
+            <div class="stat-frame">
+                <span>400+</span>
+                <p style="max-width: 159px">задоволених учнів та батьків </p>
+            </div>
+            <div class="stat-frame" >
+                <span>190+</span>
+                <p style="max-width: 132.86px">балів отримали 83 учні Центру</p>
+            </div>
+            <div class="stat-frame">
+                <span>180+</span>
+                <p style="max-width: 159px">балів отримали 56% учнів Центру</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section" id="about-us">
+        <h2>Про Репетиторський центр «YOU CAN»</h2>
+        <div class="row">
+            <img src="{% static 'img/about_first.png' %}" alt="">
+            <p>Освітній центр працює зі школярами, студентами коледжів та технікумів у сфері надання репетиторських послуг із різних навчальних предметів шкільної програми – "Пояснимо складні теми простими словами".</p>
+        </div>
+        <div class="row background-parent" id="change_order_about">
+            <p style="margin-left: 0px; margin-right: 50px;">На базі Центру працюють розмовний клуб "Talk time", курси англійської, німецької та польської мов. Працюємо офлайн та онлайн, індивідуально, у парах та малих групах (3-6 осіб). Розроблено онлайн курси з базових навчальних предметів.</p>
+            <img src="{% static 'img/about_sec.png' %}" alt="">
+        </div>
+        <div class="row background-parent" style="margin-bottom: 0px;">
+            <img src="{% static 'img/about_th.png' %}" alt="">
+            <p>Кваліфіковані спеціалісти, сучасні методики, індивідуальний підхід, багаторічний досвід, робота на результат. Якісні знання за демократичними цінами. Співбесіди та консультації безкоштовні.</p>
+        </div>
+    </div>
+
+
+    <div class="course-list-section container" id="courses">
+        <h2 class="course-list-title">Про предмети та заняття в YOU CAN</h2>
+        <h2 class="course-list-meta">Список предметів</h2>
+
+        <div class="wrap tabcontent courses" id="znoCourse">
+                                        <div class="course-item zno-courses">
+                    <img onclick='openCoursePopup(event)' src="{% static 'svg/info.svg' %}" alt="" class="info-icon">
+                    <img src="{% static 'img/ukrainian.png' %}" alt="" class="course-banner">
+                    <div class="course-info">
+                        <h3>Українська мова</h3>
+                        <p>Наше завдання - навчити дітей вільно володіти українською та знати усі її тонкощі.
+                            Досвідчені репетитори допомагають учням розбирати усі граматичні теми і збагачувати словниковий запас + складати НМТ на високі бали
+                        </p>
+                        <div class="wrap-btn">
+                            <a href="#consultation" class="course-btn">Зареєструватися</a>
+                        </div>
+                    </div>
+                </div>
+                            <div class="course-item zno-courses">
+                    <img onclick='openCoursePopup(event)' src="{% static 'svg/info.svg' %}" alt="" class="info-icon">
+                    <img src="{% static 'img/math.png' %}" alt="" class="course-banner">
+                    <div class="course-info">
+                        <h3>Математика</h3>
+                        <p>Наш найперший та найпопулярніший предмет!
+                            Наші учні готуються до НМТ з математики, а також підтягують поточні оцінки з 5 по 11 клас.
+                            Не розумієш пояснень в школі? Ми розкажемо так, що ти знайдеш відповіді на усі свої питання!
+                        </p>
+                        <div class="wrap-btn">
+                            <a href="#consultation" class="course-btn">Зареєструватися</a>
+                        </div>
+                    </div>
+                </div>
+                            <div class="course-item zno-courses">
+                    <img onclick='openCoursePopup(event)' src="{% static 'svg/info.svg' %}" alt="" class="info-icon">
+                    <img src="{% static 'img/history.png' %}" alt="" class="course-banner">
+                    <div class="course-info">
+                        <h3>Iсторія України</h3>
+                        <p>Важливість знання Історії України зараз неможливо заперечити.
+                            Саме тобі репетитори в YOU CAN працюють над тим, аби ти не просто вчив, а саме РОЗУМІВ історію.
+                            Це допомагає нашим учням складати НМТ з Історії України на найвищі бали!</p>
+                        <div class="wrap-btn">
+                            <a href="#consultation" class="course-btn">Зареєструватися</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-item zno-courses">
+                    <img onclick='openCoursePopup(event)' src="{% static 'svg/info.svg' %}" alt="" class="info-icon">
+                    <img src="{% static 'img/english.png' %}" alt="" class="course-banner">
+                    <div class="course-info">
+                        <h3>Англійська мова</h3>
+                        <p>Досі розумієш лише «London is the capital of Great Britain»?
+                            Чи засидівся на рівні В1?
+                            YOU CAN прокачає твої speaking, listening, reading та writing на всі 200%!
+                            Занятття з використанням інтерактиву і безліч цікавих ресурсів! Чекаємо на тебе</p>
+                        <div class="wrap-btn">
+                            <a href="#consultation" class="course-btn">Зареєструватися</a>
+                        </div>
+                    </div>
+                </div>
+                            <div class="course-item zno-courses">
+                    <img onclick='openCoursePopup(event)' src="{% static 'svg/info.svg' %}" alt="" class="info-icon">
+                    <img src="{% static 'img/physics.png' %}" alt="" class="course-banner">
+                    <div class="course-info">
+                        <h3>Фізика</h3>
+                        <p>Те, що важко зрозуміти в школі, пояснимо на заняттях в YOU CAN!
+                            Візуальні та графічні матеріали, зрозумілі приклади і пояснення, здавалось би, найскладніших задач!
+                            На уроках проходимо всю шкільну програму і готуємо до НМТ! </p>
+                        <div class="wrap-btn">
+                            <a href="#consultation" class="course-btn">Зареєструватися</a>
+                        </div>
+                    </div>
+                </div>
+                            <div class="course-item zno-courses">
+                    <img onclick='openCoursePopup(event)' src="{% static 'svg/info.svg' %}" alt="" class="info-icon">
+                    <img src="{% static 'img/biology.png' %}" alt="" class="course-banner">
+                    <div class="course-info">
+                        <h3>Біологія</h3>
+                        <p>Для тих, хто збирається вступати на медичні спеціальності знання біології є супер важливими. По-перше, це один з вибіркових предметів на НМТ.
+                            По-друге, якщо ти не збираєшся складати біологію на НМТ для вступу в медичний ВНЗ, розуміння основ біології полегшить тобі навчання в декілька разів!
+                            А ми допоможемо тобі з цим:)</p>
+                        <div class="wrap-btn">
+                            <a href="#consultation" class="course-btn">Зареєструватися</a>
+                        </div>
+                    </div>
+                </div>
+                            <div class="course-item zno-courses">
+                    <img onclick='openCoursePopup(event)' src="{% static 'svg/info.svg' %}" alt="" class="info-icon">
+                    <img src="{% static 'img/chemist.png' %}" alt="" class="course-banner">
+                    <div class="course-info">
+                        <h3>Хімія</h3>
+                        <p>Курс підготовки до ЗНО з хімії передбачає опрацювання чотирьох тематичних блоків: «Загальна хімія», «Неорганічна хімія», «Органічна хімія», «Обчислення в хімії»; він спрямований не лише на засвоєння учнями хімічних понять, законів, теорій, а й на формування вміння пояснювати хімічні явища, робити обґрунтовані висновки про них, осмислено використовувати знання на практиці.
+</p>
+                        <div class="wrap-btn">
+                            <a href="#consultation" class="course-btn">Зареєструватися</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                    </div>
+    </div>
+
+
+	<div class="prices-section" id="prices">
+		<h3>
+			Цiни
+		</h3>
+        <hr>
+        <div id="zno" class="prices">
+			<div class="mobile-titles">
+				<div>
+					<b>Індивідуально</b>
+                    <p><b>Одне заняття</b></p>
+				</div>
+				<div>
+					<b>2 учні</b>
+                    <b>Одне заняття</b>
+                    <p><b>Одне заняття</b></p>
+				</div>
+				<div>
+					<b>	3-6 учнів </b>
+                    <p><b>Одне заняття</b></p>
+				</div>
+			</div>
+			<div class="mobile-titles1">
+				<div>
+					<b>Підготовка до НМТ та вступу закордон! Заняття з учнями 5-11 класів</b>
+				</div>
+				<div>
+					<b>Підготовка до НМТ та вступу закордон! Заняття з учнями 5-11 класів</b>
+
+				</div>
+				<div>
+                    <b>Підготовка до НМТ та вступу закордон! Заняття з учнями 5-11 класів</b>
+				</div>
+			</div>
+            			<div class="mobile-titles2">
+				<div>
+                    <p>
+                        <b>450 грн /90 хв</b>
+                    </p>
+                    <p>
+                        <b>300 грн /60 хв</b>
+                    </p>
+				</div>
+				<div>
+                    <p>
+                        <b>300 грн /90 хв</b>
+                    </p>
+                    <p>
+                        <b>200 грн /60 хв</b>
+                    </p>
+				</div>
+				<div>
+                    <p>
+                        <b>240 грн /90 хв</b>
+                    </p>
+				</div>
+			</div>
+		</div>
+        <hr>
+	</div>
+
+
+	<div class="entry-test-section" id="entry">
+		<h3>
+			Як стати частиною YOU CAN родини:
+		</h3>
+		<div class="entry-wrap">
+			<div class="entry-item">
+				<h5>
+					Перший крок
+				</h5>
+				<p>
+					Заповнюєш гугл-форму для запису і ми звʼяжемось з тобою найближчим часом
+				</p>
+			</div>
+
+			<div class="entry-item">
+				<h5>
+					Другий крок
+				</h5>
+				<p>
+					Проводимо пробне безкоштовне заняття, визначаємо рівень і надаємо рекомендації
+				</p>
+			</div>
+
+			<div class="entry-item">
+				<h5>
+					Третій крок
+				</h5>
+				<p>
+					Обираємо найкомфортніший для тебе формат і тип занять
+				</p>
+			</div>
+
+			<div class="entry-item">
+				<h5>
+					Четвертий крок
+				</h5>
+				<p>
+					Формуємо графік і…працюємо!)
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+
+    <div class="reviews-section container" id="Reviews">
+        <div class="title-line">
+            <div class="title">
+                Вiдгуки наших учнiв
+            </div>
+        </div>
+        <div #swiperRef="" class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                        <div class="review-frame">
+                            <div class="review-frame-content">
+                                <div class="personality">
+                                    <div class="photo">
+                                        <img src="{% static 'img/hesh.png' %}" alt="">
+                                    </div>
+                                    <div class="p-info">
+                                        <div class="fullname">Ім'я Фамілія</div>
+                                        <a target="_blank" href="#" class="instagram">
+                                            <img src="{% static 'svg/instagram.svg' %}" alt="">
+                                            <div class="inst-login">Посилання на профіль</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    Мені порадили саме цей Репетиторський центр, і я жодного разу не пошкодувала про свій вибір!
+                                    Безмежно вдячна за набуті знання й посмішку на вустах після кожного заняття.
+                                    Усі вчителі привітні,  цікаво й доступно  пояснюють матеріал. Дуже всіх полюбила й рада, що займалася саме тут!                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="review-frame">
+                            <div class="review-frame-content">
+                                <div class="personality">
+                                    <div class="photo">
+                                        <img src="{% static 'img/hesh.png' %}" alt="">
+                                    </div>
+                                    <div class="p-info">
+                                        <div class="fullname">Ім'я Фамілія</div>
+                                        <a target="_blank" href="#" class="instagram">
+                                            <img src="{% static 'svg/instagram.svg' %}" alt="">
+                                            <div class="inst-login">Посилання на профіль</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    Готуючись до ЗНО, пам’ятайте: хоч матеріал, винесений на тестування, упорядкований відповідно до шкільної програми, але завдання складені не так, як зазвичай у школі.
+                                    Крім того, учень не може тримати в голові всієї інформації, яку він отримав упродовж 11 років навчання.
+                                    Як би не старався, скільки б літератури не опрацював, усе одно щось пропустиш.
+                                    Саме тому дуже важливий комплексний підхід у підготовці.
+                                    Завдяки вчителям Репетиторського центру «YouCan» та їхнім особистим розробкам, я отримав саме ту інформацію, що була необхідна, без зайвої «води», яка часто трапляється в підручниках.
+                                    Ми не просто опрацьовували конспекти, виконували тести, а й багато працювали з візуальними джерелами, бо завдяки їм краще запам’ятовувався матеріал.
+                                    І найголовніше – приходь зараз, щоб не згаяти жодної хвилини!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="review-frame">
+                            <div class="review-frame-content">
+                                <div class="personality">
+                                    <div class="photo">
+                                        <img src="{% static 'img/hesh.png' %}" alt="">
+                                    </div>
+                                    <div class="p-info">
+                                        <div class="fullname">Ім'я Фамілія</div>
+                                        <a target="_blank" href="#" class="instagram">
+                                            <img src="{% static 'svg/instagram.svg' %}" alt="">
+                                            <div class="inst-login">Посилання на профіль</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    Дуже вдячна вашому Центру за якісну підготовку до ЗНО.
+                                    Учителі доступно пояснювали матеріал, відповідали на всі запитання, які мене цікавили.
+                                    Завдяки  нашій злагодженій роботі я змогла досягнути бажаних результатів.
+                                    Раджу всім вступникам й охочим підвищувати свій рівень знань із будь-якого предмету саме в Репетиторському  центрі «YouCan»!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="review-frame">
+                            <div class="review-frame-content">
+                                <div class="personality">
+                                    <div class="photo">
+                                        <img src="{% static 'img/hesh.png' %}" alt="">
+                                    </div>
+                                    <div class="p-info">
+                                        <div class="fullname">Ім'я Фамілія</div>
+                                        <a target="_blank" href="#" class="instagram">
+                                            <img src="{% static 'svg/instagram.svg' %}" alt="">
+                                            <div class="inst-login">Посилання на профіль</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    Навчалася в Репетиторському центрі «YouCan» упродовж року.
+                                    Займалася в групах з чотирьох предметів.
+                                    Мене супроводжували постійно: з моменту реєстрації на курсах і до останнього іспиту.
+                                    Завдяки отриманим знанням, я досить успішно склала ЗНО, вступила до омріяного вишу на бюджет.
+                                    Тож раджу всім. За якісною підготовкою саме сюди!                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="review-frame">
+                            <div class="review-frame-content">
+                                <div class="personality">
+                                    <div class="photo">
+                                        <img src="{% static 'img/hesh.png' %}" alt="">
+                                    </div>
+                                    <div class="p-info">
+                                        <div class="fullname">Ім'я Фамілія</div>
+                                        <a target="_blank" href="#" class="instagram">
+                                            <img src="{% static 'svg/instagram.svg' %}" alt="">
+                                            <div class="inst-login">Посилання на профіль</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    Репетиторського центру «YouCan» процес підготовки став набагато легший.
+                                    Вони не просто викладали  матеріал, а й знаходили індивідуальний підхід до кожного учня, давали багато корисних порад щодо самої процедури проходження ЗНО.
+                                    Головне – почати підготовку вчасно, щоб встигнути все опрацювати, і тоді під час іспиту не буде несподіванок.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="review-frame">
+                            <div class="review-frame-content">
+                                <div class="personality">
+                                    <div class="photo">
+                                        <img src="{% static 'img/hesh.png' %}" alt="">
+                                    </div>
+                                    <div class="p-info">
+                                        <div class="fullname">Ім'я Фамілія</div>
+                                        <a target="_blank" href="#" class="instagram">
+                                            <img src="{% static 'svg/instagram.svg' %}" alt="">
+                                            <div class="inst-login">Посилання на профіль</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    Мені порекомендували Репетиторський центр «YouCan» друзі, і я вдячна їм за пораду, тому що мої сподівання виправдалися.
+                                    У Центрі знаходять підхід до кожного учня, уміють зацікавити, стимулюють креативне мислення, що дало позитивний результат.
+                                    Усім рекомендую!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="review-frame">
+                            <div class="review-frame-content">
+                                <div class="personality">
+                                    <div class="photo">
+                                        <img src="{% static 'img/hesh.png' %}" alt="">
+                                    </div>
+                                    <div class="p-info">
+                                        <div class="fullname">Ім'я Фамілія</div>
+                                        <a target="_blank" href="#" class="instagram">
+                                            <img src="{% static 'svg/instagram.svg' %}" alt="">
+                                            <div class="inst-login">Посилання на профіль</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    Складав мультитест – 2022. Українська мова 34 бали із 35; математика 30 із 30; історія України 34 із 35.
+                                    Я навіть сам не очікував на такий високий результат. Усім раджу репетиторський центр "YouCan" для підготовки до ЗНО.                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="review-frame">
+                            <div class="review-frame-content">
+                                <div class="personality">
+                                    <div class="photo">
+                                        <img src="{% static 'img/hesh.png' %}" alt="">
+                                    </div>
+                                    <div class="p-info">
+                                        <div class="fullname">Ім'я Фамілія</div>
+                                        <a target="_blank" href="#" class="instagram">
+                                            <img src="{% static 'svg/instagram.svg' %}" alt="">
+                                            <div class="inst-login">Посилання на профіль</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    Упродовж 7 місяців я займалася в Репетиторському центрі "YouCan", отримала всі необхідні для складання ЗНО знання, завдяки співпраці з кваліфікованими й чуйними педагогами.
+                                    Наші заняття проходили цікаво й легко, із використанням різних форм роботи: тестів, презентацій та ігор.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="review-frame">
+                            <div class="review-frame-content">
+                                <div class="personality">
+                                    <div class="photo">
+                                        <img src="{% static 'img/hesh.png' %}" alt="">
+                                    </div>
+                                    <div class="p-info">
+                                        <div class="fullname">Ім'я Фамілія</div>
+                                        <a target="_blank" href="#" class="instagram">
+                                            <img src="{% static 'svg/instagram.svg' %}" alt="">
+                                            <div class="inst-login">Посилання на профіль</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    Учителі Репетиторського центру "YouCan" допомогли якісно підготуватися до ЗНО, опрацювали зі мною весь необхідний матеріал.
+                                    Я дуже задоволений результатами ЗНО, особливо з історії України, бо отримав 193 бали.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+        <div class="arrows">
+            <img class="swiper-prev" src="{% static 'img/arrow-left.png' %}" alt="">
+            <img class="swiper-next" src="{% static 'img/arrow-right.png' %}" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="application-section container" id="consultation">
+        <div class="appl-photo">
+            <img class="photo" src="{% static 'img/final.png' %}" alt="">
+        </div>
+        <div class="appl-form">
+            <h4>Залишити заявку</h4>
+            <div role="form" class="wpcf7" id="wpcf7-f976-o2" lang="uk" dir="ltr">
+
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="{% url 'submit_application' %}" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="976" />
+<input type="hidden" name="_wpcf7_version" value="5.6.3" />
+<input type="hidden" name="_wpcf7_locale" value="uk" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f976-o2" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+<input type="hidden" name="_wpcf7_recaptcha_response" value="" />
+</div>
+    {% csrf_token %}
+<p><label>Ваше ім'я<br />
+<span class="wpcf7-form-control-wrap" data-name="your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span></label><br />
+<label>Ваш email<br />
+<span class="wpcf7-form-control-wrap" data-name="your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span></label><br />
+<label>Ваш телефон<br />
+<span class="wpcf7-form-control-wrap" data-name="your-phone"><input type="tel" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" /></span></label></p>
+<div class="checkbox-agree">
+ <span class="wpcf7-form-control-wrap" data-name="checkbox-133"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required"><span class="wpcf7-list-item first last"><label><input type="checkbox" name="checkbox-133[]" value="Я даю згоду на обробку своїх персональних даних" /><span class="wpcf7-list-item-label">Я даю згоду на обробку своїх персональних даних</span></label></span></span></span>
+</div>
+<div class="submit-btn">
+ <img src="{% static 'img/submit-arrow.png' %}" alt=""><br />
+ <button type="submit">Звʼяжіться зі мною</button>
+</div>
+<p style="display: none !important;"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_2" name="_wpcf7_ak_js" value="247"/><script>document.getElementById( "ak_js_2" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><div class="wpcf7-response-output" aria-hidden="true"></div></form></div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="faq-section container" id="question">
+        <h2>Вiдповiдi на поширенi запитання</h2>
+        <div class="faq">
+            <div class="faq-block">
+                <div class="faq-question">
+                    <h3>Де проходять офлайн заняття?</h3>
+                    <img src="{% static 'svg/arrow-down.svg' %}" alt="">
+                </div>
+                <div class="faq-answer">Ми знаходимось в м. Полтава у бізнес-центрі «Панорама».
+                    Маємо 3 затишних офіси з усім, що потрібно для комфортного навчання: обладнання, матеріали і звичайно щось солодке до чаю чи кави:) </div>
+                <hr>
+            </div>
+            <div class="faq-block">
+                <div class="faq-question">
+                    <h3>Як краще навчатися: онлайн чи офлайн?</h3>
+                    <img src="{% static 'svg/arrow-down.svg' %}" alt="">
+                </div>
+                <div class="faq-answer" style="display: none;">У реаліях часу передусім слід зважати на безпекову ситуацію. Крім того, цей вибір залежить від особливостей сприйняття інформації учнем, наскільки потрібний безпосередній контакт з учителем, наскільки далеко учень проживає від Центру, які освітні потреби хоче задовольнити під час занять. Зазначимо, що педагоги Центру однаково майстерно працюють у різних формах організації навчального процесу.</div>
+                <hr>
+            </div>
+            <div class="faq-block">
+                <div class="faq-question">
+                    <h3>Як краще займатися: індивідуально чи в групі?</h3>
+                    <img src="{% static 'svg/arrow-down.svg' %}" alt="">
+                </div>
+                <div class="faq-answer" style="display: none;">Займатися індивідуально, в парі чи групі – це справа особиста. Зважати треба на рівень своїх стартових знань, особливостей сприйняття інформації, предмету, який вивчається. Звично, індивідуальні заняття спрямовані тільки на одного учня, але і формування груп відбувається з урахуванням попереднього моніторингу знань. Центр залишає за собою право переформатовувати групи під час навчання якщо того потребує оптимізація процесу вивчення предмету. </div>
+                <hr>
+            </div>
+            <div class="faq-block">
+                <div class="faq-question">
+                    <h3>Що робити, якщо я пропущу заняття?</h3>
+                    <img src="{% static 'svg/arrow-down.svg' %}" alt="">
+                </div>
+                <div class="faq-answer" style="display: none;">Ми поважаємо наших учнів і завжди сподіваємось на їх взаємну повагу, тому в нашому центрі діють наступні правила:
+                                                <p>  1. Попередження не пізніше, ніж за 4 год  (переносимо заняття на інший день) </p>
+                                                <p> 2. Попередження менше, ніж за 4 год (заняття вважається проведеним і відпрацьовується у групі) </p>
+                                                <p> 3. На місяць допускається 1 форс-мажор (переносимо заняття на інший день) </p>
+                </div>
+                <hr>
+            </div>
+            <div class="faq-block">
+                <div class="faq-question">
+                    <h3>Скільки занять на тиждень?</h3>
+                    <img src="{% static 'svg/arrow-down.svg' %}" alt="">
+                </div>
+                <div class="faq-answer" style="display: none;">Твій графік формується особисто під твої запити та можливості.
+                    На пробному занятті ми визначимо оптимальну кількість занять на місяць, аби досягти необхідного результату.
+                    І, коли узгодимо її з тобою,  залишається лише обрати зручні дні та години для занять!) </div>
+                <hr>
+            </div>
+            <div class="faq-block">
+                <div class="faq-question">
+                    <h3>Як проходить оплата?</h3>
+                    <img src="{% static 'svg/arrow-down.svg' %}" alt="">
+                </div>
+                <div class="faq-answer" style="display: none;">Тут ми також подбали про Ваш комфорт. Оплата занять можлива декількома способами:
+                                                   <p> 1. Помісячно (оплачуєте у будь-який зручний день, після отримання рахунку)</p>
+                                                   <p> 2. Погодинно (оплачуєте кожне заняття окремо)</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+
+<div class="upper-footer">
+                <div class="upper-footer-content container">
+                    <div class="footer-column" id="column1">
+                        <a href="#start"><img class="footer-logo" src="{% static 'svg/02_You_Can_Logo_Black.svg' %}" alt=""></a>
+                        <p>© 2023. Всі права захищені</p>
+                    </div>
+                    <div class="footer-column" id="column2">
+                        <h4>Меню</h4>
+                        <div class="links">
+                            <a href="#prices">Ціни</a>
+                            <a href="#test">Консультація</a>
+                            <a href="#courses">Предмети</a>
+                        </div>
+                    </div>
+                    <div class="footer-column" id="column3">
+                        <h4>Контакти</h4>
+                        <div class="links">
+                            <a href=""><strong><u>+380 95 812 29 67</u></strong></a>
+                        <div class="social">
+                            <a target="_blank" href="https://t.me/+-CqHd9RnwihkNjBi"><img src="{% static 'svg/telegram.svg' %}" alt=""></a>
+                            <a target="_blank" href="https://www.instagram.com/youcan_mathschool/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><img src="{% static 'svg/instagram.svg' %}" alt=""></a>
+                            <a target="_blank" href="https://www.tiktok.com/@youcanschool?_t=8gwRqN0wfu2&_r=1"><img src="{% static 'svg/tik-tok.svg' %}" alt=""></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<script src="{% static 'js/swap.js' %}"></script>
+<script>
+    var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            centeredSlides: false,
+            spaceBetween: 40,
+            /*pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },*/
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
+            },
+        });
+
+
+
+     function openPopup(hover) {
+         hover = '.' + hover;
+         document.querySelector(hover).style.display = "flex";
+         document.querySelector('.wrap-frame-popup-content .description').style.display = "block";
+        document.getElementById('body').style.height = "100%";
+        document.getElementById('body').style.overflow = "hidden";
+    };
+
+    function closePopup(hover) {
+        hover = '.' + hover;
+        document.querySelector(hover).style.display = "none";
+        document.querySelector('.wrap-frame-popup-content .description').style.display = "-webkit-box";
+        document.getElementById('body').style.height = "100%";
+        document.getElementById('body').style.overflow = "unset";
+    };
+
+    let mobilebtn = document.querySelectorAll(".mobile-btn");
+        mobilebtn.forEach((event) => {
+        event.addEventListener("click", () => {
+            if (document.getElementById("mobile-header").style.display !== "none") {
+                document.getElementById("mobile-header").style.display = "none";
+            } else {
+                document.getElementById("mobile-header").style.display = "block";
+            }
+        });
+    });
+
+
+    function openCourse(evt, courseName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("filter-btn");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" filter-btn-active", "");
+              }
+              document.getElementById(courseName).style.display = "flex";
+              evt.currentTarget.className += " filter-btn-active";
+    };
+
+	function openCoursePopup(event) {
+		let parent = event.target.parentElement;
+		console.log(parent);
+		let title = parent.querySelector('.course-info > h3').innerText;
+		let bannerSrc = parent.querySelector('.course-banner').getAttribute('src');
+		let text = parent.querySelector('.course-info > p').innerHTML
+
+		let popup = document.createElement('div');
+		popup.id = title.replace(' ', '_');
+		popup.classList.add('popup');
+		popup.style.display = 'flex';
+		popup.innerHTML =
+		`
+		<div class="wrap-frame-popup-content wrap-frame">
+                           <div class="subject-image-wrap">
+                                <div onclick="removePopup('${popup.id}')" class="info-icon">
+                                   <img class="close-icon" width="24" height="24" src="{% static 'svg/close.svg' %}" alt="">
+                               </div>
+                                <img class="w-img" src="${bannerSrc}" alt="">
+                            </div>
+                            <div class="wrap-info">
+                               <div class="wrap-info-content">
+                                    <div class="title">
+                                    ${title}
+									</div>
+                                    <div class="popup-description">
+                                    ${text}
+									</div>
+                                </div>
+                           </div>
+                      </div>
+		`;
+		document.body.appendChild(popup);
+    };
+
+	function removePopup(popup_id){
+		console.log(popup_id);
+		let popup = document.getElementById(popup_id);
+		document.body.removeChild(popup);
+	}
+    function openPrice(evt, priceName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("prices");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("filter-btn-price");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" filter-btn-active", "");
+              }
+              document.getElementById(priceName).style.display = "flex";
+              evt.currentTarget.className += " filter-btn-active";
+    };
+
+
+    let answers = document.querySelectorAll(".faq-block");
+        answers.forEach((event) => {
+        event.addEventListener("click", () => {
+            if (event.classList.contains("active")) {
+                event.classList.remove("active");
+            } else {
+                event.classList.add("active");
+            }
+        });
+        });
+
+
+</script>
+</html>
